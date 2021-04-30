@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Md Jahid Hasan's Portfolio</title>
   <!-------------------Google Font------------------------>
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -9,7 +10,9 @@
   <!-------------------FontAwesome Cdn Link--------------->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-------------------Boostrap Cdn Link------------------>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+<!--  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+
   <!-------------------Animated Headline------------------>
   <link rel="stylesheet" href="css/animatedheadlines.css">
   <!-------------------Styling---------------------------->
@@ -103,10 +106,10 @@
   <section class="about" id="about">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-sm-12 about_img">
+        <div class="col col-12 col-sm-12 col-md-6 about_img">
           <img src="images/mine_pic.jpg" alt="">
         </div>
-        <div class="col-md-5 col-sm-12 text-white about_text">
+        <div class="col col-12 col-sm-12 col-md-5 text-white about_text">
           <h2>About Me</h2>
           <br>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa delectus similique! Ad alias assumenda deserunt doloremque dolorum, ducimus eaque, illum iure nostrum optio quas quidem quis sint soluta unde.</p>
@@ -141,7 +144,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
           <div class="education">
-            <h3>Education</h3>
+            <h3 class="text-center">Educational Background</h3>
             <div class="education_details">
               <div class="education_item">
                 <h4>
@@ -165,7 +168,7 @@
 
         <div class="col-sm-12 col-md-6">
           <div class="competitive_programming">
-            <h3>Competitive Programming</h3>
+            <h3 class="text-center">Competitive Programming</h3>
             <div class="cp_details">
               <div class="cp_item">
                 <h4><a href="https://codeforces.com/profile/Jahid.SUST">Codeforces</a></h4>
@@ -194,7 +197,7 @@
     <div class="container">
       <div class="row">
         <div class="section-title col-sm-12">
-          <h1>Recent Portfolio</h1>
+          <h1 class="text-center">Recent Work</h1>
         </div>
         <br><br><br>
         <div class="part col-sm-12">
@@ -330,11 +333,7 @@
   <!------------------------------------------Content form------------------------------------------------------------->
   <section id="contactUs" class="contact">
     <div class="container">
-      <div class="row">
-        <div class="title-section">
-          <h1><strong>CONTACT US</strong></h1>
-        </div>
-      </div>
+      <h1 class="text-center"><strong >CONTACT US</strong></h1>
       <br>
       <div class="row">
         <div class="col-md-12">
@@ -388,8 +387,7 @@
 
 
 
-
-  <!-------------------Boostrap Cdn Js Link-------------->
+  <!--------------------------------jquery------------------------------>
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
   <!-------------------Animated Headline----------------->
   <script src="js/animatedheadlines.js"></script>
@@ -447,6 +445,18 @@
       });
 
       $("#portfolio-item").mixItUp();
+      // $('#portfolio').mixItUp({
+      //   transitionSpeed: 450,
+      //
+      //   callbacks: {
+      //     onMixFail: function(state){
+      //       alert('No elements found matching '+state.activeFilter);
+      //     },
+      //     onMixEnd: function(state){
+      //       console.log(state.activeFilter);
+      //     }
+      //   }
+      // });
     });
   </script>
 
