@@ -467,12 +467,6 @@ b i {
   color: white;
 }
 
-@media (max-width: 776px) {
-  .competitive_programming {
-    margin-top: 40px;
-  }
-}
-
 /**************************************************Portfolio Markup****************************************************/
 .section-title h3 {
   color: white;
