@@ -700,7 +700,8 @@ figure:hover figcaption {
   margin: auto;
   width: 50rem;
   max-width: 100%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
 }
 
 .contact_form .btn {
