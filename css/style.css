@@ -16,6 +16,15 @@ section {
   padding: 10rem 2rem 0 2rem;
 }
 
+.title {
+  font-size: 2.5em;
+  font-family: 'Lobster', cursive;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 /***************************************Head or Home Section***********************************************************/
 #home {
   margin-top: 0 !important;
@@ -58,6 +67,7 @@ section {
 .header .logo a,
 .header .logo a img {
   display: block;
+  font-family: 'Dancing Script', cursive;
 }
 
 @media (max-width:500px) {
@@ -361,9 +371,10 @@ b i {
   margin: auto;
 }
 
+.about h1 span,
 .about_text h1 span,
 .about_text h3 span {
-  color: red;
+  color: #007bff;
   font-weight: bold;
 }
 
@@ -576,6 +587,16 @@ b i {
   display: block;
 }
 
+.grid-item figure video {
+  /*position: relative;*/
+  width: 100%;
+  height: 100%;
+  /*min-height: 420px;*/
+  /*min-width: 420px;*/
+  /*display: block;*/
+  object-fit: cover;
+}
+
 .grid-item figure figcaption {
   position: absolute;
   padding: 15px;
@@ -628,7 +649,6 @@ figcaption .title {
   width: 100%;
   left: 0;
   right: 0;
-  font-size: 18px;
   line-height: 30px;
   text-transform: capitalize;
   top: 50%;
@@ -639,6 +659,7 @@ figcaption .title {
   letter-spacing: 0;
 }
 
+
 figcaption .sub-title {
   margin: 0;
   padding: 0;
@@ -647,12 +668,19 @@ figcaption .sub-title {
   width: 100%;
   left: 0;
   font-size: 13px;
-  top: 50%;
   margin-top: 30px;
   transform: translateX(-70px) translateY(0) translateZ(0) rotate(0deg) scale(1);
   transition: 0.5s;
   opacity: 0;
   letter-spacing: 0;
+}
+
+figcaption .code-link {
+  top: 50%;
+}
+
+figcaption .live-site {
+  top: 60%;
 }
 
 .grid-item figure:hover {
@@ -690,11 +718,6 @@ figure:hover figcaption {
 }
 
 /*******************************************************Contact form***************************************************/
-.contact h1 {
-  margin-bottom: 5rem;
-  text-align: center;
-}
-
 .contact_img img {
   display: block;
   margin: auto;
@@ -744,9 +767,13 @@ figure:hover figcaption {
   color: white;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 767px) {
   .contact_form {
     margin-top: 5rem;
+  }
+
+  .contact_img img {
+    width: 60%;
   }
 }
 
